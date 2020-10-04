@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_style.css">
+    <script type="text/javascript" src="Main.js"></script>
+    
+
+    <title>Home Page</title>
+</head>
+<body>
+
+    <div class="big-container">
+
+        
+        <div id="sidebar" class="side-bar">
+            <a href="#about">About</a>
+            <a href="#qualification">Qualifications</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="main">
+            <div id="flex" >
+                <section id="about">
+                    <div class="container">
+                            <h1> About</h1> 
+                            <hr>
+                            
+                            <img src="/Images/haris-korovesis-iS2dlzcANHY-unsplash.jpg" alt="Selfie">
+                            
+                                <p>
+                                    Hey there, my name is AJ, I made this site to showcase my technical skills. NOT MY SPELLING SKILLS! I am a programmer/ designer familiar with the basics of C#, JAVA and Blender. I love creativity and could watch for hours and hours of things being made. I believe that as long as you enjoy what you are doing, you will be happy FOREVER. While you are creating something, create something funny to keep the motivation
+                                </p>
+                                <p>COLOR makes everything. when it has a nice colorful palatte it already stands out </p>
+                            
+                            <input type="text" id="anime_name">
+                            <button id="button" type="submit" onclick="submit">GETZ Anime</button>
+
+                            <div id="anime"></div>
+    
+                    </div>     
+                </section> 
+    
+                <section id="qualification">
+                    <div class="container">
+                            <h1>Qualifications</h1>
+                            <hr>
+            
+                            <tbody>
+                                <tr>POes</tr>
+            
+                            </tbody>
+            
+
+                    </div>
+                </section>
+     
+                <section id="expertise">
+                    <div class="container">
+                            <h1>Expertise</h1>
+                            <hr>
+ 
+                            <div class="skill-container">
+                                <p>Html</p>
+                                <div class="skill" id="html">70%</div>
+                            </div>
+                            <div class="skill-container">
+                                <p>CSS</p>
+                                <div class="skill" id="css">70%</div>
+                            </div>
+                            <div class="skill-container">
+                                <p>JS</p>
+                                <div class="skill" id="js" >65%</div>
+                            </div>
+                            <div class="skill-container">
+                                <p>Blender</p>
+                                <div class="skill" id="blender">72%</div>
+                            </div>
+                            <div class="skill-container">
+                                <p>Photoshop</p>
+                                <div class="skill" id="photo">65%</div>
+                            </div>
+                            <div class="skill-container">
+                                <p>C++</p>
+                                <div class="skill" id="cplus">69%</div>
+                            </div>
+                            <div class="skill-container">
+                                <p>C#</p>
+                                <div class="skill" id="csharp">80%</div>
+                            </div>
+                            <div class="skill-container">
+                                <p>Clueless</p>
+                                <div class="skill" id="clueless">100%</div>
+                            </div>
+                            <div class="skill-container">
+                                <p>Energy</p>
+                                <div class="skill" id="energy">10%</div>
+                            </div>
+                            
+                           
+                    
+                </div>
+                </section>
+     
+                <section id="projects">
+                    <div class="container">
+                        
+                            <h1>Projects</h1>
+                            <hr>
+                            <p>These are some of the projects that I was busy with. Click on the image to download video file</p>
+            
+            
+                            <div class="grid">
+                                <div class="grid-item-1">
+                                    <a href="/Animations/FirstAnimation0001-0060.mov" download>
+                                    <img src="/Thumbnail/0031.png" alt="Thumbnail">
+                                  </a>
+                                </div>
+                                <div class="grid-item-2">
+                                    <a href="/Animations/0001-0090.mp4" download>
+                                        <img src="/Thumbnail/2ndAnimation.png" alt="Thumbnail">
+                                      </a>
+                                </div>
+                            </div>
+                            
+                            
+                         
+                        
+                    </div>      
+                </section>
+    
+                <section id="contact">
+                    <div class="container">
+                        
+                            <h1>Contact Info</h1>
+                            
+                                <hr> 
+                                <h2> Name:   AJ Buys </h2>
+                                <h2> Cell Phone: 0765946116 </h2>
+                                <h2> Whatsapp:   0765946116 </h2>
+                               
+                                
+                                <div class="grid">
+                                <div class="grid-item-1">
+                                    <img src="/Images/Steam_back.jpg" alt="Steam">
+                                </div>
+                                <div class="grid-item-2">
+                                    <img src="/Images/Githun_Back.jpg" alt="Github" >
+                                </div>
+                                <div class="grid-item-3">
+                                    <img src="/Images/Discord.jpg" alt="Discord" >
+                                </div>
+                            </div>
+                                
+    
+            
+                        
+                    </div>        
+                </section>
+
+            </div>
+ 
+        </div>
+    </div>
+
+
+    
+
+    
+
+
+   <script>
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+        }
+    return color;
+    }
+   </script>
+    
+                
+</body>
+</html>

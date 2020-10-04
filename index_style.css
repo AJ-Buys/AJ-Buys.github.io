@@ -1,0 +1,51 @@
+:root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    background-image: url(Images/liao-je-wei-vnIPqD5ZCHE-unsplash.jpg);
+    background-position: inherit;
+    background-repeat: inherit;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+
+    width: 80vw;
+    height: 50%;
+    
+    
+    background-color: #000000f1;
+    }
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 64px;
+}
+
+a :hover{
+    border-bottom: lawngreen;
+    color: lawngreen;
+}
+
+.loader {
+    position: absolute;
+    border: 16px solid #474b4f; 
+    border-top: 16px solid #86c232; 
+    border-bottom: 16px solid #86c232; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.52s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
