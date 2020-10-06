@@ -89,6 +89,11 @@ h2 {
   color: white;
 }
 
+h3{
+  display: block;
+  color: white;
+}
+
 p{
   font-size: 1.5em;
   padding: 18px 25px;
@@ -109,6 +114,18 @@ hr {
 /*#endregion*/
 
 /*#region Body*/
+
+/* LOADER */
+.loader {
+  position: absolute;
+  border: 16px solid #474b4f; 
+  border-top: 16px solid #86c232; 
+  border-bottom: 16px solid #86c232; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.52s linear infinite;
+}
 img{
   width: 15rem;
   height: auto;
@@ -177,6 +194,34 @@ img{
   display: flex;
   flex-direction: column;
 }
+
+
+.anime_con{
+  text-decoration: none;
+}
+
+.anime_left :hover{
+  
+  color: #86c232;
+  border-style: solid;
+  transition: 0.2s;
+  animation: borderflash 0.8s infinite;
+}
+
+.steam_con{
+  text-decoration: none;
+  color: #fff;
+}
+
+.steam_con :hover{
+  text-decoration: none;
+  color: #86c232;
+  border-style: solid;
+  transition: 0.2s;
+  padding: 8px 8px 8px 32px;
+  animation: borderflash 0.8s infinite;
+}
+
 /*#endregion*/
 
 /*#region Grid*/
@@ -266,7 +311,7 @@ img{
     padding: 11.6rem;
   }
 
-#anime_cont{
+#anime_con{
   display: flex;
   flex-direction: row;
   
@@ -279,18 +324,12 @@ img{
 .grid{
   display: inline;
 }
+
+
+
+
 }
 
-/* LOADER */
-.loader {
-  position: absolute;
-  border: 16px solid #474b4f; 
-  border-top: 16px solid #86c232; 
-  border-bottom: 16px solid #86c232; 
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 1.52s linear infinite;
-}
+
 
 

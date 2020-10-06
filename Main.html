@@ -9,17 +9,18 @@
 
     <title>Home Page</title>
 </head>
-<body onload="loading_in()">
+<body>
 
     
     <div class="big-container">
         <div id="sidebar" class="side-bar">
             <a href="#about">About</a>
+            <a href="#Interests">Interests</a>
             <a href="#qualification">Qualifications</a>
             <a href="#expertise">Expertise</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            <a href="" download>Download CV</a>
+            <a href="Resume/Andries Johannes (resume).docx" download>Download CV</a>
         </div>
         
         <div class="main">
@@ -36,14 +37,28 @@
                                 </p>
                                 <p>COLOR makes everything. when it has a nice colorful palatte it already stands out </p>
                             
-                            <input type="text" id="anime_name">
-                            <button id="button" type="submit" onclick="submit">GETZ Anime</button>
-
-                            <div id="anime"></div>
-    
+                            
                     </div>     
                 </section> 
     
+                <section id="interests">
+                    <div class="container">
+                            <h1>My Interests</h1>
+                            <hr>
+                            
+                            <h2>Anime (Animation)</h2>
+                            <input type="text" id="anime_name">
+                            <button id="button" type="submit" onclick="submit">GETZ Anime</button>
+                            <div id="anime"></div>
+
+                            <br>
+                            <h2>Gaming</h2>
+                            <div id="steam"></div>
+            
+
+                    </div>
+                </section>
+
                 <section id="qualification">
                     <div class="container">
                             <h1>Qualifications</h1>
@@ -58,6 +73,7 @@
                     </div>
                 </section>
         
+
                 <section id="expertise">
                     <div class="container">
                             <h1>Expertise</h1>
