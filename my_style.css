@@ -323,21 +323,23 @@ img{
     padding: 1.9rem;
   }
 
-#anime_con{
-  display: flex;
-  flex-direction: row;
-  
-}
+  #anime_con{
+    display: flex;
+    flex-direction: row;
+    
+  }
 
-.container{
-  width:100%
-}
+  .container{
+    width:100%
+  }
 
-.grid{
-  display: inline;
-}
+  .grid{
+    display: inline;
+  }
 
-
+  .container{
+    background-color: rgba(0, 0, 0, 0.857);
+  }
 
 
 }
