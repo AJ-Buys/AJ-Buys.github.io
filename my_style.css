@@ -14,7 +14,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  
+  scroll-behavior: smooth;
   }
 
 /*#endregion*/
@@ -32,6 +32,11 @@
   0% {border-color: #000;}
   100%{border-color:chartreuse;}
 }
+@keyframes animateText{
+  0%{background-position: 0% 20%;}
+  100%{background-position: 70% 100%;}
+}
+
 
 /*#endregion*/
 
@@ -115,6 +120,12 @@ hr {
 
 /*#region Body*/
 
+span{
+  background-color: rgba(0, 247, 41, 0.734);
+  animation: animateText 25s linear infinite;
+  -webkit-animation: animateText 25s linear infinite;
+}
+
 /* LOADER */
 .loader {
   position: absolute;
@@ -180,7 +191,7 @@ img{
 
 .container {
   text-align: center;
-  width: 80vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -200,7 +211,7 @@ img{
   text-decoration: none;
 }
 
-.anime_left :hover{
+.anime_left > a :hover{
   
   color: #86c232;
   border-style: solid;
@@ -246,21 +257,18 @@ img{
 
 }
 
-#item-1 :hover{
+#item-1 > a :hover{
   border-style: solid;
   color: #86c232;
 }
 
-#item-2 :hover{
+#item-2 > a :hover{
   border-style: solid;
   color: #86c232;
 }
 
 
-#item-3 :hover{
-  border-style: solid;
-  color: #86c232;
-}
+
 /*#endregion*/
 
 /*#region Expertise*/
@@ -288,19 +296,23 @@ img{
 #csharp {width: 80%; background-color: #d58040;}
 #clueless{width: 100%; background-color: #1824d0;}
 #energy{width: 10%; background-color: #26bf26;}
+#java{width: 60%; background-color: #b02bca;}
+
+
 
 /*#endregion*/
 
 @media only screen and (max-width: 768px) {
   
   .side-bar {
+    display: flex;
+    flex-wrap: wrap;
     bottom: 0;
     width: 100%;
     height: auto;
     
   }
   .side-bar a {
-    flex-direction: column;
     font-size: 16px;
     padding-left: 1.5rem;
   }
@@ -308,7 +320,7 @@ img{
   .big-container{
     display: inline;
     margin:0;
-    padding: 11.6rem;
+    padding: 1.9rem;
   }
 
 #anime_con{

@@ -50,7 +50,7 @@ function getSteam(){
     {
         return `
                  <div class="flex-row">
-                    <a href="${item.url}" class="steam_con">
+                    <a href="${item.url}" class="steam_con" target="_blank">
                             <div class="steam_cont">${item.title}</div>
                     </a>
                 <div>
