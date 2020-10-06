@@ -3,12 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    background-color: #000;
 
 
     background-image: url(Images/liao-je-wei-vnIPqD5ZCHE-unsplash.jpg);
     background-position: inherit;
-    background-repeat: inherit;
+    background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
 }

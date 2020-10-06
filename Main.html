@@ -9,17 +9,17 @@
 
     <title>Home Page</title>
 </head>
-<body>
+<body onload="loading_in()">
 
+    
     <div class="big-container">
-
-        
         <div id="sidebar" class="side-bar">
             <a href="#about">About</a>
             <a href="#qualification">Qualifications</a>
             <a href="#expertise">Expertise</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <a href="" download>Download CV</a>
         </div>
         
         <div class="main">
@@ -29,10 +29,10 @@
                             <h1> About</h1> 
                             <hr>
                             
-                            <img src="/Images/haris-korovesis-iS2dlzcANHY-unsplash.jpg" alt="Selfie">
+                            <img src="/Images/WhatsApp Image 2020-10-05 at 7.50.23 PM.jpeg" style="width:250px;height:300px;" alt="Selfie">
                             
                                 <p>
-                                    Hey there, my name is AJ, I made this site to showcase my technical skills. NOT MY SPELLING SKILLS! I am a programmer/ designer familiar with the basics of C#, JAVA and Blender. I love creativity and could watch for hours and hours of things being made. I believe that as long as you enjoy what you are doing, you will be happy FOREVER. While you are creating something, create something funny to keep the motivation
+                                    Hey there, my name is AJ, I made this site to showcase my technical skills. NOT MY SPELLING SKILLS! I am a programmer/ designer familiar with the basics of C#, JAVA and Blender. I love creativity and could watch for hours and hours of things being made. I believe that as long as you enjoy what you are doing, you will be happy FOREVER. While you are creating something, create something funny to keep the motivation. I have a massive passion for anime and games due to the creativity that goes into the story and the animations
                                 </p>
                                 <p>COLOR makes everything. when it has a nice colorful palatte it already stands out </p>
                             
@@ -57,12 +57,12 @@
 
                     </div>
                 </section>
-     
+        
                 <section id="expertise">
                     <div class="container">
                             <h1>Expertise</h1>
                             <hr>
- 
+    
                             <div class="skill-container">
                                 <p>Html</p>
                                 <div class="skill" id="html">70%</div>
@@ -100,34 +100,34 @@
                                 <div class="skill" id="energy">10%</div>
                             </div>
                             
-                           
+                            
                     
                 </div>
                 </section>
-     
+        
                 <section id="projects">
                     <div class="container">
                         
                             <h1>Projects</h1>
                             <hr>
-                            <p>These are some of the projects that I was busy with. Click on the image to download video file</p>
+                            <p>These are some of the projects that I was busy with.  Click on the image to download video file. The video file contains a animation i made when i was learning myself blender</p>
             
             
                             <div class="grid">
-                                <div class="grid-item-1">
+                                <div class="grid" id="item-1">
                                     <a href="/Animations/FirstAnimation0001-0060.mov" download>
                                     <img src="/Thumbnail/0031.png" alt="Thumbnail">
-                                  </a>
+                                    </a>
                                 </div>
-                                <div class="grid-item-2">
+                                <div class="grid" id="item-2">
                                     <a href="/Animations/0001-0090.mp4" download>
                                         <img src="/Thumbnail/2ndAnimation.png" alt="Thumbnail">
-                                      </a>
+                                        </a>
                                 </div>
                             </div>
                             
                             
-                         
+                            
                         
                     </div>      
                 </section>
@@ -141,48 +141,36 @@
                                 <h2> Name:   AJ Buys </h2>
                                 <h2> Cell Phone: 0765946116 </h2>
                                 <h2> Whatsapp:   0765946116 </h2>
-                               
+                                
                                 
                                 <div class="grid">
-                                <div class="grid-item-1">
-                                    <img src="/Images/Steam_back.jpg" alt="Steam">
+                                    <div id="item-1">
+                                        
+                                        <img src="/Images/Steam_back.jpg" alt="Steam">
+                                    </div>
+                                    <div id="item-2">
+                                        <img src="/Images/Githun_Back.jpg" alt="Github" >
+                                    </div>
+                                    <div id="item-3">
+                                        <img src="/Images/Discord.jpg" alt="Discord" >
+                                    </div>
                                 </div>
-                                <div class="grid-item-2">
-                                    <img src="/Images/Githun_Back.jpg" alt="Github" >
-                                </div>
-                                <div class="grid-item-3">
-                                    <img src="/Images/Discord.jpg" alt="Discord" >
-                                </div>
-                            </div>
                                 
-    
-            
-                        
+
                     </div>        
                 </section>
 
+                
+
+
             </div>
- 
+    
         </div>
     </div>
 
+   
 
     
-
-    
-
-
-   <script>
-    function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-        }
-    return color;
-    }
-   </script>
-    
-                
+          
 </body>
 </html>

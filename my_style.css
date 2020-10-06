@@ -19,59 +19,6 @@
 
 /*#endregion*/
 
-@media only screen and (max-width: 768px) {
-  .side-bar {
-    display:flex;
-    flex-direction: column;
-    position: relative;
-    top:0;
-    width: 100%;
-    height: auto;
-    
-    
-    
-  }
-  .side-bar a {
-    flex-direction: column;
-    font-size: 16px;
-    padding-left: 1.5rem;
-  }
-  
-  body{
-    display: inline;
-  }
-
-  .container{
-    width: 100%;
-    height: auto;
-    margin: 0 0;
-    flex-direction: column;
-
-  }
-
-  .big-container{
-    display: inline;
-  }
-
-  .anime_cont{
-    flex-direction: row;
-  }
- 
-}
-
-
-/* LOADER */
-.loader {
-  position: absolute;
-  border: 16px solid #474b4f; 
-  border-top: 16px solid #86c232; 
-  border-bottom: 16px solid #86c232; 
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 1.52s linear infinite;
-}
-
 /*#region Animations*/
 @keyframes spin {
   0% { transform-style: rotate(0deg); }
@@ -87,44 +34,6 @@
 }
 
 /*#endregion*/
-
-/*#region Sidenav*/
-.side-bar {
-  height: 100%;
-  z-index: 1;
-  background-color: rgb(0, 0, 0);
-  overflow-x: hidden;
-  grid-area: side;
-  
-  
-  }
-
-.side-bar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  
-}
-
-.side-bar a:hover {
-
-  border-style: solid;
-  transition: 0.2s;
-  color: #86c232;
-  animation: borderflash 0.8s infinite;
-
-  
-  
-}
-/*#endregion*/
-
-#anime_name{
-  width: 50%;
-  padding:15px 32px ;
-}
 
 /*#region Buttons*/
 #button {
@@ -199,13 +108,11 @@ hr {
 }
 /*#endregion*/
 
-
 /*#region Body*/
 img{
   width: 15rem;
   height: auto;
 }
-
 
 .big-container{
   display: grid;
@@ -215,7 +122,44 @@ img{
 
 .main{
   grid-area: main;
+  margin: 0;
+  padding: 0;
 }
+
+/*#region Sidenav*/
+.side-bar {
+  flex-direction: row;
+  width: 16.5vw;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  position: fixed;
+  grid-area: side;
+  
+  
+  }
+
+.side-bar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.side-bar a:hover {
+
+  border-style: solid;
+  transition: 0.2s;
+  color: #86c232;
+  animation: borderflash 0.8s infinite;
+
+}
+/*#endregion*/
+
 
 .container {
   text-align: center;
@@ -226,70 +170,14 @@ img{
   justify-content: center;
   align-items: center;
   background-color: #000000f1;
-  }
-
-  .container > * {
-    width: 100%;
-  }
-
-
-#anime_cont{
-  display: flex;
-  flex-direction: row;
   
-}
+  }
 
 #flex{
   display: flex;
   flex-direction: column;
 }
-
-.flex.row
-{
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  
- }
-  
-
-.text-center {
-  text-align: center;
-}
-
-
-.contactApi{
-  display :flex;
-  flex-basis: 33.3%;
-}
-
-.contact-item{
-  display: flex;
-  max-width: 20rem;
-  max-height: 15rem;
-}
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-  
-.justify-center {
-  justify-content: center;
-}
-  
-
-
-.devide{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 /*#endregion*/
-
 
 /*#region Grid*/
 .grid{
@@ -298,38 +186,37 @@ img{
   gap: 0.5px;
 }
 
-.grid-item-1 {
+#item-1 {
   grid-column-start: 1;
   grid-column-end: 1;
 }
 
-.grid-item-2 {
+#item-2 {
   grid-column-start: 2;
   grid-column-end: 2;
 }
-.grid-item-3 {
+#item-3 {
   grid-column-start: 3;
   grid-column-end: 3;
 
 }
 
-.grid-item-1 :hover{
+#item-1 :hover{
   border-style: solid;
   color: #86c232;
 }
 
-.grid-item-2 :hover{
+#item-2 :hover{
   border-style: solid;
   color: #86c232;
 }
 
 
-.grid-item-3 :hover{
+#item-3 :hover{
   border-style: solid;
   color: #86c232;
 }
 /*#endregion*/
-
 
 /*#region Expertise*/
 .skill-container {
@@ -359,8 +246,51 @@ img{
 
 /*#endregion*/
 
+@media only screen and (max-width: 768px) {
+  
+  .side-bar {
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    
+  }
+  .side-bar a {
+    flex-direction: column;
+    font-size: 16px;
+    padding-left: 1.5rem;
+  }
+  
+  .big-container{
+    display: inline;
+    margin:0;
+    padding: 11.6rem;
+  }
 
+#anime_cont{
+  display: flex;
+  flex-direction: row;
+  
+}
 
+.container{
+  width:100%
+}
 
+.grid{
+  display: inline;
+}
+}
+
+/* LOADER */
+.loader {
+  position: absolute;
+  border: 16px solid #474b4f; 
+  border-top: 16px solid #86c232; 
+  border-bottom: 16px solid #86c232; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1.52s linear infinite;
+}
 
 
