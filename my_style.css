@@ -132,7 +132,7 @@ span{
 
 /* LOADER */
 .loader {
-  position: absolute;
+  position: fixed;
   border: 16px solid #474b4f; 
   border-top: 16px solid #86c232; 
   border-bottom: 16px solid #86c232; 
@@ -140,6 +140,10 @@ span{
   width: 120px;
   height: 120px;
   animation: spin 1.52s linear infinite;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 img{
   width: 15rem;
@@ -275,6 +279,61 @@ img{
 
 /*#endregion*/
 
+/*#region Contact Form*/
+.border{
+  width: 100px;
+  height: 5px;
+  background: turquoise;
+  margin: 10px auto;
+}
+
+.contact_con{
+  width: 60%;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact_text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: black;
+  padding: 20px 40px;
+  outline: none;
+  color: #26bf26;
+  transition: 0.5s;
+  font-family: "Architects Daughter";
+  font-size: 1em;
+}
+
+.contact_text:focus{
+  box-shadow: 0 0 10px 4px turquoise;
+}
+
+textarea.contact_text{
+  resize: none;
+  height: 60%;
+}
+.contact_btn{
+  text-align: center;
+  border: 0;
+  background: turquoise;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: "Architects Daughter";
+  font-size: 1em;
+}
+.contact_btn:hover{
+  background: chartreuse;
+}
+/*#endregion*/
+
 /*#region Expertise*/
 .skill-container {
   width:60%; 
@@ -345,6 +404,9 @@ img{
     background-color: rgba(0, 0, 0, 0.857);
   }
 
+  #contact{
+    padding-bottom: 31px;
+  }
 
 }
 

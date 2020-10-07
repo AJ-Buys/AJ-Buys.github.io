@@ -1,7 +1,10 @@
 
+
+
 window.onload = loading();
     
 function loading(){
+
     getAnime();
     getSteam();
 
@@ -33,7 +36,7 @@ function getAnime(){
         }
         
         document.getElementById("anime").innerHTML = `
-        <h2> ${anime_data.length} " results were found"</h2>
+        <h2>One of my favorite animes: One punch man</h2>
         ${anime_data.map(anime_layout)}
         `
  
