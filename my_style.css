@@ -105,6 +105,10 @@ p{
   color: white;
 }
 
+#contactPar{
+  padding: 0;
+}
+
 hr {
   display: block;
   margin-top: 0.5em;

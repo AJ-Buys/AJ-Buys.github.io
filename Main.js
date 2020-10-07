@@ -75,7 +75,7 @@ function getSteam(){
         return `
         <div class="flex-row">
             <a href="${item.profileurl}" class="profile_con" target="_blank">
-                <img src="${item.avatarFull}">
+                <img src="${item.avatarFull}" alt="profile image">
             </a>
         </div>
         `
@@ -83,7 +83,7 @@ function getSteam(){
 
 
     document.getElementById("steam_prof").innerHTML = `
-    <h2>My profile</h2>
+    <h2>My profile (CLICK on the image to take to site)</h2>
     ${steamProf_data.map(profile_layout)}
     `
 })
