@@ -9,7 +9,7 @@ function loading(){
 
 /* Anime API */
 function getAnime(){
-    fetch('https://api.jikan.moe/v3/search/anime?q=yugioh').then(res => res.json()).then((json)=>{
+    fetch('https://api.jikan.moe/v3/search/anime?q=onepunchman').then(res => res.json()).then((json)=>{
         var anime_data = json.results
         anime_data.length = 3
     
@@ -66,26 +66,28 @@ function getSteam(){
 }
     
 
-/* Fun facts 
-    fetch('').then(res => res.json()).then((json)=>{
-    var ff_data = json.results
+/* Steam Profile facts */
+    fetch('https://cors-anywhere.herokuapp.com/http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=54EABE1E89DC9241A7EA50A02F56F7A6&steamids=76561198412631196&format=json').then(res => res.json()).then((json)=>{
+    var steamProf_data = json.response.players
 
-    function f_facts_layout(item)
+    function profile_layout(item)
     {
         return `
-        
-        
+        <div class="flex-row">
+            <a href="${item.profileurl}" class="profile_con" target="_blank">
+                <img src="${item.avatarFull}">
+            </a>
+        </div>
         `
     }
 
 
-    var ff_con = decument.getElementById("").innerHTML = `
-    
-    
+    document.getElementById("steam_prof").innerHTML = `
+    <h2>My profile</h2>
+    ${steamProf_data.map(profile_layout)}
     `
+})
 
-
-*/
 
    
 
