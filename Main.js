@@ -1,14 +1,18 @@
 
-
-
 window.onload = loading();
-    
+
 function loading(){
 
+    
     getAnime();
     getSteam();
+    getProfile();
 
+    
+    
 }
+
+
 
 /* Anime API */
 function getAnime(){
@@ -70,6 +74,7 @@ function getSteam(){
     
 
 /* Steam Profile facts */
+function getProfile(){
     fetch('https://cors-anywhere.herokuapp.com/http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=54EABE1E89DC9241A7EA50A02F56F7A6&steamids=76561198412631196&format=json').then(res => res.json()).then((json)=>{
     var steamProf_data = json.response.players
 
@@ -89,7 +94,9 @@ function getSteam(){
     <h2>My profile (CLICK on the image to take to site)</h2>
     ${steamProf_data.map(profile_layout)}
     `
-})
+    })
+}
+    
 
 
    

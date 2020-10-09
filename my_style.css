@@ -268,11 +268,13 @@ img{
 #item-1 > a :hover{
   border-style: solid;
   color: #86c232;
+  box-shadow: 0 0 10px 4px rgb(12, 233, 104);
 }
 
 #item-2 > a :hover{
   border-style: solid;
   color: #86c232;
+  box-shadow: 0 0 10px 4px rgb(12, 233, 104);
 }
 
 
@@ -290,7 +292,8 @@ img{
 .contact_con{
   width: 60%;
   margin: auto;
-  padding: 0 10px;
+  padding: 0 16px;
+  padding-bottom: 30px;
   overflow: hidden;
 }
 
